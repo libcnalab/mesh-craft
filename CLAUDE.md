@@ -1,22 +1,21 @@
-# MeshCraft — Claude Instructions
+AI must not be used to generate code for contributions to this project.
 
-## plan.md review workflow
+"AI" in this case means a Large Language Model ("LLM"), such as ChatGPT,
+Claude, Copilot, Grok, etc.
 
-Before implementing any task from plan.md, ask the user AND provide a short description of what the task involves (what will be changed, which files, what the user will see). Format:
+AI-generated code is based upon sources of unknown origins and may not be 
+compatible with the licenses applicable to this project, or may introduce 
+conflicting license terms if it includes code from other projects.
 
-> "Mám implementovat **[task ID]** — [task title]?
-> [2–4 sentences describing what will be implemented and why it is useful]"
+AI can be used to identify issues with contributions to this project, but the
+solutions to those issues should be authored by humans.
 
-- If the user says **yes** → implement it.
-- If the user says **no** → remove that task from plan.md and move on.
+We have found that AI will frequently hallucinate issues that are not actually
+problems in practice, report incorrect information, and describe problems that
+are actually not issues at all. If AI identifies a problem with this codebase,
+please make sure you understand what it is saying and have independently
+confirmed that the issue exists before submitting a bug report or pull request.
 
-Go through tasks one at a time, in the priority order listed in plan.md's "Priority execution queue" section (near the top of the file, not the bottom).
-Do **not** implement anything from plan.md without explicit confirmation first.
-
----
-
-## Boundaries / constraints
-
-- **No CNA changes without owner permission.** A separate Claude Code instance handles CNA.
-- **Do not add `${meta-gl_SOURCE_DIR}/include` to CMakeLists.txt** — triggers full CNA recompile.
-- **Do not change `Mc3Document` public API** without checking `mc3togltf` and all test XMLs.
+By submitting a pull request to this project, you confirm that you are the
+author of your changes, have the necessary rights to contribute them, and
+comply with all applicable licensing requirements of this project.
